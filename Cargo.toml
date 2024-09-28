@@ -1,0 +1,17 @@
+[package]
+name = "f4-foc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+embedded-hal = "1.0"
+cortex-m = "0.7"
+cortex-m-rt = "0.7"
+#nb = "1"
+micromath = "2"
+panic-halt = "0.2"
+rtic = { version = "2.1", features = ["thumbv7-backend"] }
+rtic-monotonics = { version = "2", features = ["cortex-m-systick"] }
+stm32f4xx-hal = { version = "0.21", features = ["stm32f411","rtic2","usb_fs","otg-fs"] }
+usb-device = "0.3"
+usbd-serial = "0.2"

@@ -1,0 +1,13 @@
+[target.thumbv7em-none-eabihf]
+runner = 'cargo flash --chip STM32F411CEUx'
+#runner = 'cargo dfu'
+
+rustflags = [
+  "-C", "link-arg=-Tlink.x",
+]
+
+[build]
+target = "thumbv7em-none-eabihf"
+
+[env]
+DEFMT_LOG = "info"

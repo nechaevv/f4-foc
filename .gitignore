@@ -1,3 +1,6 @@
+/.cargo
+/.direnv
 /.idea
 /target
 Cargo.lock
+flake.lock
